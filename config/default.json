@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://owie:owie123@mern-stack.zj8bs.mongodb.net/sample_mflix?retryWrites=true&w=majority",
+  "jwtSecret": "mern_jwtSecret"
+}
