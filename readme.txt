@@ -17,7 +17,10 @@
 16: Adding Validations
 
 
-# To install all
+# To install
+npm i
+
+# Then install clilent
 npm run client-Install
 
 # To run both server and client
