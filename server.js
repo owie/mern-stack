@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
-dotenv.config();
+const config = require('./config');
 
 const items = require('./routes/api/Items');
 const users = require('./routes/api/Users');
@@ -13,11 +12,11 @@ const app = express();
 app.use(express.json());
 
 // Database config
-const db = process.env.DATABASE_URL;
+const { MONGO_URI } = config;
 
 // Connect to Mongo
 mongoose
-  .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('database connected'))
   .catch(err => console.log(err))
 
