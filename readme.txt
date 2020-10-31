@@ -17,11 +17,14 @@
 16: Adding Validations
 
 
+#cd mern-stack
 # To install
 npm i
 
-# Then install clilent
-npm run client-install
+#cd client
+#To install client
+npm i
 
 # To run both server and client
+# cd .. (to mer-stack)
 npm run dev
