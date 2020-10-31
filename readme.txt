@@ -21,7 +21,7 @@
 npm i
 
 # Then install clilent
-npm run client-Install
+npm run client-install
 
 # To run both server and client
 npm run dev
